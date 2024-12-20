@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Kopi Sem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<style>
+    #peta {
+        height: 90vh;
+    }
+</style>
+
+<body class="bg-yellow-700 font-sans overflow-hidden">
+    <header class="bg-yellow-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">Kedai Kopi Sem</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="./" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="./menu.html" class="hover:text-yellow-300">Menu</a></li>
+                    <li><a href="./kontak.html" class="hover:text-yellow-300">Kontak</a></li>
+                    <li><a href="./alamat.html" class="hover:text-yellow-300">Alamat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="menu" class="h-auto mt-20 items-center content-center top-0 ">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-6">Menu Kami</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-yellow-800 p-6 rounded-lg shadow-md">
+                    <img src="./kopi.jpg" alt="Kopi Hitam" class="rounded-lg mb-4 object-cover w-full h-64">
+                    <h3 class="text-xl text-yellow-500 font-bold mb-2">Kopi Hitam</h3>
+                    <p class="text-white">Kopi yang kuat dan beraroma.</p>
+                    <p class="mt-2 font-bold text-yellow-600">Rp 10.000</p>
+                </div>
+                <div class="bg-yellow-800 p-6 rounded-lg shadow-md">
+                    <img src="./extrajoss.jpg" alt="Extrajoss Susu" class="rounded-lg mb-4 object-cover w-full h-64">
+                    <h3 class="text-xl text-white font-bold mb-2">Extrajoss Susu</h3>
+                    <p class="text-white">Perpaduan Extrajoss dan susu yang lembut.</p>
+                    <p class="mt-2 font-bold text-yellow-600">Rp 10.000</p>
+                </div>
+                <div class="bg-yellow-800 p-6 rounded-lg shadow-md">
+                    <img src="./cappucino.jpg" alt="Cappuccino" class="rounded-lg mb-4 object-cover w-full h-64">
+                    <h3 class="text-xl text-white font-bold mb-2">Cappuccino</h3>
+                    <p class="text-white">Kelezatan yang lembut dan berbusa.</p>
+                    <p class="mt-2 font-bold text-yellow-600">Rp 15.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-yellow-800 fixed bottom-0 w-full text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Kedai Kopi Sem. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Kopi Sem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<style>
+    #peta {
+        height: 90vh;
+    }
+</style>
+
+<body class="bg-gray-100 overflow-hidden font-sans">
+    <header class="bg-yellow-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">Kedai Kopi Sem</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="./menu.html" class="hover:text-yellow-300">Menu</a></li>
+                    <li><a href="./kontak.html" class="hover:text-yellow-300">Kontak</a></li>
+                    <li><a href="./alamat.html" class="hover:text-yellow-300">Alamat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="h-screen bg-yellow-700 flex items-center justify-center bg-cover bg-center"
+            style="background-image: url('https://source.unsplash.com/1600x900/?coffee-shop');">
+            <div class="container mx-auto flex items-center justify-between px-8">
+                <!-- Kolom Kiri: Teks Selamat Datang -->
+                <div class="text-white p-8 rounded-lg w-1/2">
+                    <h2 class="text-6xl text-white font-bold">Selamat Datang di Kedai Kopi Sem</h2>
+                    <p class="mt-4">Tempat terbaik untuk menikmati secangkir kopi.</p>
+                    <a href="#menu"
+                        class="mt-6 inline-block bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-600">Jelajahi
+                        Menu</a>
+                </div>
+
+                <!-- Kolom Kanan: Gambar -->
+                <div class="w-1/2 flex items-center justify-center">
+                    <img src="home.png" alt="Kedai Kopi" class="rounded-lg">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-yellow-800 fixed bottom-0 w-full text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Kedai Kopi Sem. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
